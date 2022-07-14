@@ -26,10 +26,3 @@ body {
   width: 100wh;
   height: 100vh;
 }
-
-.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
-  border: 4px solid #5080c7;
-  border-radius: 100%;
-  width: 20px !important;
-  height: 20px !important;
-}

@@ -9,7 +9,7 @@ interface Tab1Props {
   fetchCordinateLoading: boolean;
 }
 
-const Tab1 = ({ cordinates, fetchCordinateLoading }: Tab1Props) => {
+const Tab1: React.FC<Tab1Props> = ({ cordinates, fetchCordinateLoading }) => {
   return (
     <ContentWrapper>
       {/* cordinates */}
@@ -26,10 +26,7 @@ const Tab1 = ({ cordinates, fetchCordinateLoading }: Tab1Props) => {
       </div>
       {/* map */}
       <div className="map-outer">
-        <MapWrapper
-          cordinates={cordinates}
-          fetchCordinateLoading={fetchCordinateLoading}
-        />
+        <MapWrapper cordinates={cordinates} />
       </div>
     </ContentWrapper>
   );

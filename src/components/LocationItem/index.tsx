@@ -49,7 +49,7 @@ interface ItemProps {
   index: number;
 }
 
-const LocationItem = ({ cordinate, index }: ItemProps) => {
+const LocationItem: React.FC<ItemProps> = ({ cordinate, index }) => {
   return (
     <ItemWrapper>
       <h3 className="location-title">
